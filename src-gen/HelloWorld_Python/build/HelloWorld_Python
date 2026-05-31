@@ -1,0 +1,2 @@
+#!/bin/sh
+        /usr/bin/python3 /home/csm126/lf-test/src-gen/HelloWorld_Python/HelloWorld_Python.py "$@"

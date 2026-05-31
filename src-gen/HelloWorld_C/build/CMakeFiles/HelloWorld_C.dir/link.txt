@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/HelloWorld_C.dir/lib/schedule.c.o CMakeFiles/HelloWorld_C.dir/_helloworld_c_main.c.o CMakeFiles/HelloWorld_C.dir/HelloWorld_C.c.o -o HelloWorld_C  -lm core/libreactor-c.a core/liblf-low-level-platform-impl.a core/liblf-platform-impl.a 

@@ -1,0 +1,10 @@
+target Python {
+    timeout: 1 ms
+}
+
+main reactor HelloWorld_Python {
+    timer t(0)
+    reaction(t) {=
+        print("Hello World from Python!")
+    =}
+}

@@ -1,0 +1,53 @@
+target C {
+    timeout: 500 ms,
+    fast: true
+}
+
+reactor SourceA {
+    output out: int
+    timer t(0, 100 ms)
+    reaction(t) -> out {=
+        lf_set(out, 1);
+        printf("[step 1] Source A fired at t=%lld\n", lf_time_logical());
+    =}
+}
+
+reactor SourceB {
+    output out: int
+    timer t(0, 100 ms)
+    reaction(t) -> out {=
+        lf_set(out, 2);
+        printf("[step 1] Source B fired at t=%lld\n", lf_time_logical());
+    =}
+}
+
+reactor Adder {
+    input a: int
+    input b: int
+    output sum: int
+    reaction(a, b) -> sum {=
+        int val_a = a->is_present ? a->value : 0;
+        int val_b = b->is_present ? b->value : 0;
+        int result = val_a + val_b;
+        lf_set(sum, result);
+        printf("[step 2] Adder received: a=%d, b=%d, sum=%d\n", val_a, val_b, result);
+    =}
+}
+
+reactor Logger {
+    input in: int
+    reaction(in) {=
+        long long ms = lf_time_logical() / 1000000LL;
+        printf("[step 3] Logger received sum=%d at logical time=%lld ms\n\n", in->value, ms);
+    =}
+}
+
+main reactor DeterminismTest_C {
+    a = new SourceA()
+    b = new SourceB()
+    add = new Adder()
+    log = new Logger()
+    a.out -> add.a
+    b.out -> add.b
+    add.sum -> log.in
+}

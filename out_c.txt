@@ -1,0 +1,33 @@
+---- Start execution on Sat May 30 21:34:47 2026 ---- plus 187503500 nanoseconds
+[step 1] Source B fired at t=1780194887187503500
+[step 1] Source A fired at t=1780194887187503500
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194887187 ms
+
+[step 1] Source B fired at t=1780194887287503500
+[step 1] Source A fired at t=1780194887287503500
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194887287 ms
+
+[step 1] Source B fired at t=1780194887387503500
+[step 1] Source A fired at t=1780194887387503500
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194887387 ms
+
+[step 1] Source B fired at t=1780194887487503500
+[step 1] Source A fired at t=1780194887487503500
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194887487 ms
+
+[step 1] Source B fired at t=1780194887587503500
+[step 1] Source A fired at t=1780194887587503500
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194887587 ms
+
+[step 1] Source B fired at t=1780194887687503500
+[step 1] Source A fired at t=1780194887687503500
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194887687 ms
+
+---- Elapsed logical time (in nsec): 500,000,000
+---- Elapsed physical time (in nsec): 150,837

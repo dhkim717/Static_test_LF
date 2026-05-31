@@ -1,0 +1,24 @@
+[step 1] Source B fired at t=T
+[step 1] Source A fired at t=T
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=T ms
+[step 1] Source B fired at t=T
+[step 1] Source A fired at t=T
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=T ms
+[step 1] Source B fired at t=T
+[step 1] Source A fired at t=T
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=T ms
+[step 1] Source B fired at t=T
+[step 1] Source A fired at t=T
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=T ms
+[step 1] Source B fired at t=T
+[step 1] Source A fired at t=T
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=T ms
+[step 1] Source B fired at t=T
+[step 1] Source A fired at t=T
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=T ms

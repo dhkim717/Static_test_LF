@@ -1,0 +1,53 @@
+target Python {
+    timeout: 500 ms,
+    fast: true
+}
+
+reactor SourceA {
+    output out
+    timer t(0, 100 ms)
+    reaction(t) -> out {=
+        out.set(1)
+        print(f"[step 1] Source A fired at t={lf.time.logical()}")
+    =}
+}
+
+reactor SourceB {
+    output out
+    timer t(0, 100 ms)
+    reaction(t) -> out {=
+        out.set(2)
+        print(f"[step 1] Source B fired at t={lf.time.logical()}")
+    =}
+}
+
+reactor Adder {
+    input a
+    input b
+    output sum
+    reaction(a, b) -> sum {=
+        val_a = a.value if a.is_present else 0
+        val_b = b.value if b.is_present else 0
+        result = val_a + val_b
+        sum.set(result)
+        print(f"[step 2] Adder received: a={val_a}, b={val_b}, sum={result}")
+    =}
+}
+
+reactor Logger {
+    input _in
+    reaction(_in) {=
+        ms = lf.time.logical() // 1_000_000
+        print(f"[step 3] Logger received sum={_in.value} at logical time={ms} ms\n")
+    =}
+}
+
+main reactor DeterminismTest_Python {
+    a = new SourceA()
+    b = new SourceB()
+    add = new Adder()
+    log = new Logger()
+    a.out -> add.a
+    b.out -> add.b
+    add.sum -> log._in
+}

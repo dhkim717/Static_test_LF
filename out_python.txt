@@ -1,0 +1,31 @@
+******* Using Python version: 3.12.3
+[step 1] Source B fired at t=1780194890971581712
+[step 1] Source A fired at t=1780194890971581712
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194890971 ms
+
+[step 1] Source B fired at t=1780194891071581712
+[step 1] Source A fired at t=1780194891071581712
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194891071 ms
+
+[step 1] Source B fired at t=1780194891171581712
+[step 1] Source A fired at t=1780194891171581712
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194891171 ms
+
+[step 1] Source B fired at t=1780194891271581712
+[step 1] Source A fired at t=1780194891271581712
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194891271 ms
+
+[step 1] Source B fired at t=1780194891371581712
+[step 1] Source A fired at t=1780194891371581712
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194891371 ms
+
+[step 1] Source B fired at t=1780194891471581712
+[step 1] Source A fired at t=1780194891471581712
+[step 2] Adder received: a=1, b=2, sum=3
+[step 3] Logger received sum=3 at logical time=1780194891471 ms
+

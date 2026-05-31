@@ -1,0 +1,10 @@
+target C {
+    timeout: 1 ms
+}
+
+main reactor HelloWorld_C {
+    timer t(0)
+    reaction(t) {=
+        printf("Hello World from C!\n");
+    =}
+}
